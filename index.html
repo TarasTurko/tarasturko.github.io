@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ProPaint</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="startup()">
+
+  <header class="navbar">
+      <ul>
+          <li>
+            <a class="nav-logo" href="#"><img style="background: #fff" src="img/image.svg" width="35" height="35"></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">ProPaint</a>
+          </li>
+
+          <li>
+            <a class="nav-link"  href="#">About</a>
+          </li>
+      </ul>      
+  </header>
+     
+  <div class="container">    
+      
+        <div class="col-1">
+          <div class="btn-group">
+            <button class="btn" style="background-color: #000000;" onclick="setCollor('black')"></button>
+            <button class="btn" style="background-color: #696969;" onclick="setCollor('grey')"></button>
+            <button class="btn" style="background-color: #FF8C00;" onclick="setCollor('orange')"></button>
+            <button class="btn" style="background-color: #FF0000;" onclick="setCollor('red')"></button>
+            <button class="btn" style="background-color: #00008B;" onclick="setCollor('blue')"></button>
+            <button class="btn" style="background-color: #FFFF00;" onclick="setCollor('yellow')"></button>
+            <button class="btn" style="background-color: #006400;" onclick="setCollor('green')"></button>
+            <button class="btn" style="background-color: #8B4513;" onclick="setCollor('brown')"></button>
+            <button class="btn" style="background-color: #9370DB;" onclick="setCollor('purple')"></button>
+
+            <button class="btn-r" style="background-color: #fff;" onclick="setCollor('white')"></button>
+
+          </div>
+
+  
+  
+          <div class="slider-group" id="slidecontainer">
+            <input type="range" min="1" max="5" value="2" class="slider" id="myRange">
+          </div>
+        
+      </div>
+
+            
+
+        <div class="pos_canvas"> 
+            <div class="canvas-nav" > 
+                <a onclick="cUndo()" class="" href="#">
+                    <img src="img/action-undo-8x.webp" width="20" height="20" > 
+                </a>
+                <a  onclick="cRedo()" class="" href="#">
+                    <img src="img/action-redo-8x.webp" width="20" height="20" > 
+                </a>
+                <a  onclick="Upload()" class="" href="#">
+                    
+                </a>
+            </div>
+                <canvas id="myCanvas"></canvas> 
+        </div>
+
+</div>
+<footer class="container-fluid text-center navbar-dark bg-dark ">
+        <span class="text-muted">© Company 2017</span>
+</footer>
+  <script src="js/Function.js"></script>
+</body>
+</html>
