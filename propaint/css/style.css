@@ -96,6 +96,10 @@ li a:hover {
     cursor: pointer;
 }
 
+
+.pos_canvas{
+    
+}
 .canvas-nav{
     text-align: center;
 }
@@ -103,7 +107,6 @@ li a:hover {
 #myCanvas{
     width: 78%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	height: 70vh;
 }
 
 footer{
