@@ -38,16 +38,16 @@ li a:hover {
 }
 
 .btn{
-
-    margin-left: 30%; 
-    display: block;
+	display: block;
+    margin-left: 0%; 
+   
     border: none;
-    padding: 15%;
+    padding: 20%;
 }
 
 .btn-r{
-    margin-top: 15%;
-    margin-left: 30%; 
+    margin-top: 20%;
+    margin-left: 0%; 
     display: block;
     border: 1px solid black;
     padding: 15%;
