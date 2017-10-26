@@ -57,7 +57,8 @@ li a:hover {
 }
 
 .container{
-    margin: 2% 10% 2% 10%;
+    text-align: center;
+    margin: 3%;
     background-color: #fff;
     
 }
