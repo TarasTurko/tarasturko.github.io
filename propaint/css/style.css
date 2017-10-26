@@ -98,16 +98,21 @@ li a:hover {
 
 
 .pos_canvas{
-    
+    height: 80vh;
 }
 .canvas-nav{
     text-align: center;
 }
 
-#myCanvas{
-    width: 78%;
+canvas{
+	width: 80%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
 }
+
+#myCanvas{
+	height: device-height;
+    }
 
 footer{
     padding: 5px;
