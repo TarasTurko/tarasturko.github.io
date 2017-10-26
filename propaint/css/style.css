@@ -2,7 +2,6 @@ body {
   padding:0;
   margin:0;
   font-family:sans-serif;  
-  width: 100%;
 }
 
 a{
@@ -36,7 +35,10 @@ li a:hover {
 .nav-link{
     margin-top: 10px;
 }
-
+.btn-group{
+    width: 100%;
+    float: left;
+}
 .btn{
     display: inline-block;
     border: none;
