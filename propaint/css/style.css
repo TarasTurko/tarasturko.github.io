@@ -103,8 +103,13 @@ li a:hover {
     text-align: center;
 }
 
+.pos_canvas{
+        text-align: center;
+
+}
+
 #myCanvas{
-    width: 90%;
+    width: 80%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 }
