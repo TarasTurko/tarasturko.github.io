@@ -37,7 +37,8 @@ footer{
     width:80%;
 }
 
-@media (max-width:500px) {
+@media (max-width:520px)
+/* For mobile phones: */ {
   .left-content, .main-content {
     width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
   }
