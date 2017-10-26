@@ -38,8 +38,7 @@ li a:hover {
 }
 
 .btn{
-	display: block;
-    margin-left: 0%; 
+	display: inline-block; 
    
     border: none;
     padding: 20%;
@@ -48,7 +47,7 @@ li a:hover {
 .btn-r{
     margin-top: 20%;
     margin-left: 0%; 
-    display: block;
+    inline-block;
     border: 1px solid black;
     padding: 15%;
 
