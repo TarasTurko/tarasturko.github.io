@@ -38,23 +38,24 @@ li a:hover {
 }
 
 .btn{
-	display: inline-block; 
-   
+
+    margin-left: 30%; 
+    display: block;
     border: none;
-    padding: 20%;
+    padding: 12%;
 }
 
 .btn-r{
-    margin-top: 20%;
-    margin-left: 0%; 
-    inline-block;
+    margin-top: 15%;
+    margin-left: 30%; 
+    display: block;
     border: 1px solid black;
-    padding: 15%;
+    padding: 12%;
 
 }
 
 .container{
-    margin: 2% 5% 2% 5%;
+    margin: 2% 10% 2% 10%;
     background-color: #fff;
     
 }
@@ -97,21 +98,17 @@ li a:hover {
 
 
 .pos_canvas{
-    height: 80vh;
+    
 }
 .canvas-nav{
     text-align: center;
 }
 
-canvas{
-	width: 80%;
+#myCanvas{
+    width: 78%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 }
-
-#myCanvas{
-	height: device-height;
-    }
 
 footer{
     padding: 5px;
