@@ -12,7 +12,7 @@ function startup() {
 
 
 var MyColor="#000000";
-var size=2;
+var size=1;
 var slider = document.getElementById("myRange");
 
 var ongoingTouches = new Array();
@@ -29,6 +29,7 @@ function handleStart(evt) {
     ongoingTouches.push(copyTouch(touches[i]));
     //var color = colorForTouch(touches[i]);
     ctx.beginPath();
+    //ctx.fillRect(touches[i].pageX -myCanvas.offsetLeft, touches[i].pageY -myCanvas.offsetTop, size, size);  // and a square at the end
     ctx.arc(touches[i].pageX-myCanvas.offsetLeft, touches[i].pageY-myCanvas.offsetTop, 1, 0, 2 * Math.PI, false);  // a circle at the start
     ctx.fillStyle = MyColor;
     ctx.fill();
@@ -78,8 +79,8 @@ function handleEnd(evt) {
       //ctx.lineWidth = 4;
       //ctx.fillStyle = color;
       ctx.beginPath();
-      ctx.moveTo(ongoingTouches[idx].pageX-myCanvas.offsetLeft, ongoingTouches[idx].pageY-myCanvas.offsetTop);
-      ctx.lineTo(touches[i].pageX-myCanvas.offsetLeft, touches[i].pageY-myCanvas.offsetTop);
+      ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY);
+      ctx.lineTo(touches[i].pageX, touches[i].pageY);
       //ctx.fillRect(touches[i].pageX - 4, touches[i].pageY - 4, 8, 8);  // and a square at the end
       ongoingTouches.splice(idx, 1);  // remove it; we're done
     } else {
@@ -101,7 +102,7 @@ function handleCancel(evt) {
 
 
 function copyTouch(touch) {
-  return { identifier: touch.identifier, pageX: touch.pageX, pageY: touch.pageY };
+  return { identifier: touch.identifier, pageX: touch.pageX, pageY: touch.pageY};
 }
 
 function ongoingTouchIndexById(idToFind) {
