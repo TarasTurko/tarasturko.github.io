@@ -69,10 +69,11 @@ li a:hover {
 }
 
  .slider-group{
+    margin-top: 200px;
     text-align: center;
  }
 .slider {
-    margin-top: 15%; 
+    margin-top: ; 
     -webkit-appearance: none;
     width: 80%;
     height: 15px;
@@ -80,7 +81,6 @@ li a:hover {
     background: #d3d3d3;
     outline: none;
     opacity: 0.7;
-
 }
 
 .slider::-webkit-slider-thumb {

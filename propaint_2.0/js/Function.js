@@ -115,7 +115,7 @@ function ongoingTouchIndexById(idToFind) {
   return -1;    // not found
 }
 
-// Update the current slider value (each time you drag the slider handle)
+// Update the current slider value (each time you drag the slider handle)///////////////////////////////////
 slider.oninput = function() {
     size = this.value;
 }
